@@ -15,6 +15,7 @@ count=0
 w=1.25
 x_n = np.zeros(5)
 flag=1
+count=0
 while(flag==1):
     i=0
     while(i<=4):
@@ -41,12 +42,14 @@ while(flag==1):
         if(abs(z[n])>.01):
             flag=1
         n=n+1
+        count=count+1
     n=0
     while(n<=4):
         x[n]=x_n[n]
         n=n+1
 
 print(x_n)
+print("count: \n" , count)
         
       
     
