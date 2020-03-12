@@ -39,12 +39,14 @@ while(flag==1):
         if(abs(z[n])>.01):
             flag=1
         n=n+1
+        count=count+1
     n=0
     while(n<=4):
         x[n]=x_n[n]
         n=n+1
 
 print(x_n)
+print("Count: \n" , count)
         
       
     
