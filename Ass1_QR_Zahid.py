@@ -1,4 +1,5 @@
 import numpy as np
+k=int(input())
 A1=np.array([[5,-2],[-2,8]])
 Q1,R1=np.linalg.qr(A1)
 print(A1)
@@ -12,13 +13,16 @@ eigval,eigvec = np.linalg.eigh(A1)
 print("eigval:", eigval)
 print(eigvec)
 i=0
-flag=1
-while(flag==1):
+
+while(i<=k):
     Q1,R1=np.linalg.qr(A1)
     A2=np.matmul(R1,Q1)
     Q1,R1=np.linalg.qr(A2)
     A1=A2
     i=i+1
 
-print(A2)
+print("diagonal matrix: \n", A2)
     
+
+    
+
